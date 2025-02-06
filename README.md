@@ -1,6 +1,6 @@
 # 50 Projects In 50 Days
 
-This is a collection of 50+ mini web projects using HTML, CSS & JavaScript which did as part of a course by Brad Traversy. As this is my implementation of the course, there are changes made to the original contents.
+This is a collection of 50+ mini web projects using HTML, CSS & JavaScript which I did as part of a course by Brad Traversy. As this is my implementation of the course, there are changes made to the original contents.
 
 You can find the course here:
 
