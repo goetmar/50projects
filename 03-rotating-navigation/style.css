@@ -6,11 +6,79 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  background-color: #333;
+  color: #222;
+  overflow-x: hidden;
   margin: 0;
+}
+
+small {
+  color: grey;
+}
+
+.container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 15%;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: white;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#close {
+  transform: rotate(90deg);
+  transform-origin: -100% -100%;
+}
+
+.article-container {
+  display: flex;
+}
+
+.card-container {
+  margin-bottom: 16px;
+  margin-left: 16px;
+  width: min-content;
+}
+
+.magic-card {
+  box-shadow: 1px 1px 8px;
+  border-radius: 4.75% / 3.5%;
+  max-width: 300px;
+  min-width: 150px;
+  width: 40vw;
 }
