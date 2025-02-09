@@ -15,5 +15,5 @@ function loading() {
 
   loadText.innerText = `${progress}%`;
   loadText.style.opacity = 1 - progress / 100;
-  background.style.filter = `blur(${100 - progress}px)`;
+  background.style.filter = `blur(${(1 - progress / 100) * 30}px)`;
 }
