@@ -22,7 +22,6 @@ body {
   left: -30px;
   width: calc(100vw + 60px);
   height: calc(100vh + 60px);
-  z-index: -1;
   filter: blur(0px);
 }
 
@@ -30,6 +29,11 @@ body {
   font-size: 50px;
   color: #fff;
   text-shadow: 1px 1px 10px #000;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
 }
 
 .attribution {
