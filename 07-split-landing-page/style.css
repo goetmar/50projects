@@ -3,6 +3,9 @@
 :root {
   --bg-color: rgba(0, 0, 0, 0.3);
   --btn-hover-color: rgba(0, 0, 0, 0.6);
+  --hover-width: 75%;
+  --non-hover-width: 25%;
+  --speed: 0.3s;
 }
 
 * {
@@ -61,6 +64,7 @@ h1 {
   height: 100%;
   overflow: hidden;
   color: #fff;
+  transition: width var(--speed) ease-in-out;
 }
 
 .split.left {
@@ -68,6 +72,7 @@ h1 {
   background: url("https://images.unsplash.com/photo-1542193810-9007c21cd37e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 0;
 }
 
 .split.right {
@@ -75,6 +80,7 @@ h1 {
   background: url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 0;
 }
 
 .split::before {
@@ -85,13 +91,48 @@ h1 {
   background-color: var(--bg-color);
 }
 
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--non-hover-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--non-hover-width);
+}
+
 .attribution {
   color: #fff;
   position: absolute;
   bottom: 30px;
+  font-weight: 300;
+}
+.left .attribution {
+  left: 30px;
+  margin-right: 30px;
+}
+.right .attribution {
   right: 30px;
+  margin-left: 30px;
 }
 
 .attribution a {
   color: lightblue;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+  .btn {
+    width: 8rem;
+    padding: 1rem;
+  }
 }
