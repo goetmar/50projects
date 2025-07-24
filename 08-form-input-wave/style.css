@@ -5,7 +5,10 @@
 }
 
 body {
-  background-color: steelblue;
+  background-color: #131619;
+  background-image: url("../assets/background-blur.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -20,7 +23,7 @@ body {
 .container {
   background-color: rgb(0, 0, 0, 0.4);
   padding: 20px 40px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .container h1 {
@@ -30,7 +33,32 @@ body {
 
 .container a {
   text-decoration: none;
-  color: lightblue;
+  color: #99a5ff;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: #99a5ff;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 8px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
 }
 
 .form-control {
