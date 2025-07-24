@@ -3,8 +3,8 @@
 :root {
   --bg-color: rgba(0, 0, 0, 0.3);
   --btn-hover-color: rgba(0, 0, 0, 0.6);
-  --hover-width: 75%;
-  --non-hover-width: 25%;
+  --hover-width: calc(75% + 100px);
+  --non-hover-width: calc(25% + 100px);
   --speed: 0.3s;
 }
 
@@ -60,7 +60,7 @@ h1 {
 
 .split {
   position: absolute;
-  width: 50%;
+  width: calc(50% + 100px);
   height: 100%;
   overflow: hidden;
   color: #fff;
@@ -68,11 +68,11 @@ h1 {
 }
 
 .split.left {
-  left: 0;
   background: url("https://images.unsplash.com/photo-1542193810-9007c21cd37e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50% 50%;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 200px) 100%, 0 100%);
 }
 
 .split.right {
@@ -80,7 +80,8 @@ h1 {
   background: url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50% 50%;
+  clip-path: polygon(200px 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .split::before {
