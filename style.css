@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #99a5ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #131619;
+  background-image: url("../assets/background-blur.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  line-height: 1.5;
+}
+
+span {
+  display: inline-block;
+  width: 2.2ch;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h1 .count {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+  max-width: 680px;
+  width: 100%;
+  background-color: rgb(26 29 33/0.4);
+  border: rgb(255 255 255/0.1) solid 1px;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 3rem;
+  transition: box-shadow 0.3s ease;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a {
+  display: block;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+li a:hover,
+li a:focus {
+  /* color: #c6ccff; overwritten by js*/
+  background-color: rgba(153, 165, 255, 0.2);
+}
+
+li a:focus-visible {
+  outline: 3px solid #99a5ff;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: lightgray;
+  user-select: none;
+  text-align: center;
+  max-width: 680px;
+}
+
+footer a {
+  color: #99a5ff;
+  text-decoration: none;
+}
+
+#scroll-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+#scroll-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#scroll-top-btn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  li a {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+  }
+}
