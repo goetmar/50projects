@@ -13,7 +13,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #131619;
-  background-image: url("../assets/background-blur.svg");
+  background-image: url("/assets/background-blur.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
