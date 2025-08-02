@@ -92,6 +92,7 @@ body {
   position: absolute;
   top: 16px;
   left: 0;
+  pointer-events: none;
 }
 
 .form-control label span {
