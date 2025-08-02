@@ -3,7 +3,7 @@ const button = document.querySelector(".btn");
 const input = document.querySelector(".input");
 
 button.addEventListener("click", () => {
-  search.classList.toggle("active") && input.focus();
+  if (search.classList.toggle("active")) input.focus();
 });
 
 // Another slightly different solution:
