@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #686de0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  border: solid black;
+  border-color: black;
+  border-width: 3px 4px 3px 5px;
+  border-radius: 96% 4% 94% 5%/4% 95% 6% 95%;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+}
+
+h3 {
+  font-family: "Bangers";
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.joke {
+  font-family: "Shadows Into Light";
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  opacity: 0.6;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #9f68e0;
+  color: white;
+  border: 3px solid black;
+  box-shadow: 1px 1px 0px 0px black, 2px 2px 0px 0px black,
+    3px 3px 0px 0px black, 4px 4px 0px 0px black, 5px 5px 0px 0px black;
+  position: relative;
+  padding: 4px 24px;
+  font-family: "Bangers";
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.sketch {
+  margin-top: 20px;
+  display: flex;
+}
+
+.sketch-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketch-img img {
+  width: 200px;
+}
+
+.attribution {
+  font-style: italic;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: peachpuff;
+}
+
+.sketch-img .attribution {
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.sketch-img:hover > .attribution {
+  opacity: 1;
+}
+
+.sketch svg {
+  align-self: center;
+  transform: translateY(-25%);
+}
+
+.sketch p {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 24px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  align-self: center;
+  color: #fff;
+}
